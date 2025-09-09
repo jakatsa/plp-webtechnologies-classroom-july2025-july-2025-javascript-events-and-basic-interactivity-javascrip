@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Collar Job Connect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Blue Collar Job Connect</h1>
+      <p>Helping skilled workers showcase their services</p>
+
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <!-- Worker Registration Form -->
+    <section id="form-section">
+      <h2>Register as a Worker</h2>
+      <form id="workerForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="job">Job Type:</label>
+        <select id="job">
+          <option value="">-- Select Job --</option>
+          <option value="Plumber">Plumber</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Mechanic">Mechanic</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="e.g., 0712345678" />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="City or Town" />
+
+        <button type="submit">Add Worker</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- Worker List -->
+    <section id="list-section">
+      <h2>Registered Workers</h2>
+      <ul id="workerList"></ul>
+    </section>
+
+    <!-- Search Feature -->
+    <section id="search-section">
+      <h2>Find a Worker</h2>
+      <input type="text" id="searchInput" placeholder="Search by job type..." />
+      <ul id="searchResults"></ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
